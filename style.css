@@ -194,6 +194,17 @@ h3{font-family:"Poppins";margin:0 0 10px 0}
 .contact-grid{display:grid;grid-template-columns:1fr 360px;gap:18px}
 .contact-card{padding:14px;border-radius:12px;background:var(--card);border:1px solid rgba(255,255,255,0.02)}
 .contact-row{display:flex;flex-direction:column;gap:8px;margin-bottom:8px}
+/* follow me text*/
+.link-theme {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.link-theme:hover {
+  color: var(--accent-2);
+}
+
 .input, textarea{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px;border-radius:8px;color:var(--text);font-weight:600}
 textarea{min-height:120px;resize:vertical}
 .form-actions{display:flex;gap:8px;align-items:center}
@@ -253,6 +264,7 @@ footer small{color:var(--muted)}
   .nav-links{display:none}
   .hamburger{display:block}
 }
+
 
 
 
