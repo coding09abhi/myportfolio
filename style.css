@@ -162,6 +162,29 @@ h3{font-family:"Poppins";margin:0 0 10px 0}
 .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
 .badge{padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.02);font-weight:700;color:var(--muted);font-size:12px}
 
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 12px;
+  border: 2px solid var(--accent); /* theme color border */
+  color: var(--accent);            /* text color matches theme */
+  background: transparent;          /* empty inside */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: var(--accent);        /* filled on hover */
+  color: white;
+  border-color: var(--accent-2);   /* optional gradient accent on hover */
+}
+
+
 /* services */
 .service-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
 .service{padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.02)}
@@ -230,6 +253,7 @@ footer small{color:var(--muted)}
   .nav-links{display:none}
   .hamburger{display:block}
 }
+
 
 
 
