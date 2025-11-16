@@ -99,14 +99,26 @@ body{
   width: 360px;
   height: 360px;
   border-radius: 50%;
-  left: 50%; 
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  background: radial-gradient(circle at center, rgba(255,122,77,0.5), rgba(255,75,43,0.3) 45%, transparent 60%);
+  
+  /* Dark neon effect */
+  background: radial-gradient(circle at center, rgba(0, 150, 255, 0.2), rgba(0, 50, 100, 0.15) 40%, transparent 70%);
+  
   filter: blur(30px);
   pointer-events: none;
+  
+  /* optional soft pulse animation */
+  animation: darkNeonPulse 2.5s infinite ease-in-out;
 }
+
+@keyframes darkNeonPulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+  50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.9; }
+}
+
 
 
 .portrait{
@@ -243,13 +255,16 @@ footer small{color:var(--muted)}
   body{padding:14px}
   .wrap{padding:14px}
   .hero{grid-template-columns:1fr;gap:18px}
-  .glow{display:none}
+  .glow{width: 200px;
+    height: 200px;
+    filter: blur(20px);}
   .projects-grid{grid-template-columns:1fr}
   .service-list{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
   .nav-links{display:none}
   .hamburger{display:block}
 }
+
 
 
 
