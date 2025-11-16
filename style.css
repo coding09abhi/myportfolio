@@ -110,6 +110,30 @@ body{
 .role-badge{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));padding:8px 14px;border-radius:999px;font-weight:700;font-size:13px;color:var(--muted);z-index:3;backdrop-filter: blur(6px)}
 .role-badge strong{color:var(--text);margin-right:8px}
 
+.glow {
+  position:absolute;
+  width:360px;
+  height:360px;
+  border-radius:50%;
+  left:50%; top:50%;
+  transform:translate(-50%,-50%);
+  z-index:1;
+  background: radial-gradient(circle at center, rgba(255,122,77,0.14), rgba(255,75,43,0.06) 45%, transparent 60%);
+  filter: blur(18px);
+  pointer-events:none;
+}
+.portrait {
+  width:280px; height:280px;
+  border-radius:50%;
+  overflow:hidden;
+  border:10px solid rgba(255,255,255,0.04);
+  box-shadow: 0 18px 40px rgba(2,6,8,0.7);
+  position:relative;
+  z-index:2;
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
+
 /* sections */
 .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.02),transparent);margin:20px 0;border-radius:6px}
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
@@ -206,6 +230,7 @@ footer small{color:var(--muted)}
   .nav-links{display:none}
   .hamburger{display:block}
 }
+
 
 
 
